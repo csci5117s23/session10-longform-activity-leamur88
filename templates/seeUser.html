@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+ 		<title>OAuth Tutorial</title>
+		<script type="text/javascript" src="../static/js/redirect.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	{% include 'header.html' %}
+
+	<body>
+		<h1>HELLO {{name}}</h1>
+		{% if user != "No User" %}
+		<img src="{{pic_url}}" referrerpolicy="no-referrer">
+
+		{% endif%}
+	</body>
+
+</html>

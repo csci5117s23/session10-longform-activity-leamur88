@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+ 		<title>OAuth Tutorial</title>
+		<script type="text/javascript" src="../static/js/redirect.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	{% include 'header.html' %}
+	<body>
+		<div class="pure-g">
+			<div class="pure-u-1-24"></div>
+			<div class="pure-u-22-24">
+				<div class="pure-u-1-3"></div>
+				<div class="pure-u-1-3">
+					<h2>This is my basic OAuth test Website</h2>
+					<input class="pure-button pure-button-primary" style="background: rgb(66, 184, 221);" type="button" onclick="window.location.href='/login'" value="Go To Login"></input>
+					<input style="background: rgb(202, 60, 60);" class="pure-button pure-button-primary" type="button" onclick="window.location.href='/logout'" value="Logout"></input>
+					<input class="pure-button pure-button-primary" type="button" onclick="window.location.href='/seeUser'" value="See User"></input>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
